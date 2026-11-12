@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | David Alejandro Chacón Gómez</title>
+    <!-- Conectamos el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente de Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SECCIÓN HERO (Portada) -->
+    <header class="hero reveal">
+        <div class="hero-content">
+            <h1>David Alejandro<br>Chacón Gómez</h1>
+            <h2>Estudiante de Ingeniería de Software | UMAD</h2>
+            <p>Apasionado por las bases de datos, la ciencia de datos y el desarrollo web. Explorando la IA y los videojuegos.</p>
+            <div class="hero-links">
+                <a href="mailto:davidchacongomez197@gmail.com" class="btn">Contáctame</a>
+                <a href="https://github.com/AleChaconG" target="_blank" class="btn btn-outline">Mi GitHub</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Asegúrate de que tu foto se llame foto-david.jpg en la carpeta assets -->
+            <img src="assets/foto-david.jpg" alt="Foto de David Alejandro">
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section class="projects">
+        <h2 class="section-title reveal">Mis Proyectos</h2>
+        
+        <div class="grid-proyectos">
+            
+            <!-- Proyecto 1 -->
+            <article class="card reveal">
+                <div class="card-image" style="background: linear-gradient(45deg, #1e3a8a, #3b82f6); display:flex; align-items:center; justify-content:center; color:white; font-size: 2rem;">🎮</div>
+                <div class="card-content">
+                    <h3>Arena de Videojuegos</h3>
+                    <p>Desarrollo de una página web grupal para una comunidad de videojuegos, aplicando trabajo en equipo y maquetación web.</p>
+                    <div class="tags"><span>Web</span><span>Grupal</span></div>
+                    <a href="https://github.com/Debainilla/Arquitectos-software.git" class="card-link" target="_blank">Ver Repositorio →</a>
+                </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="card reveal">
+                <div class="card-image" style="background: linear-gradient(45deg, #b91c1c, #ef4444); display:flex; align-items:center; justify-content:center; color:white; font-size: 2rem;">🍄</div>
+                <div class="card-content">
+                    <h3>Videojuego Indie & Streamlit</h3>
+                    <p>Juego estilo Mario Bros y aplicación en Streamlit (Python) para un juego de Piedra, Papel o Tijera. Enfoque en lógica y UI.</p>
+                    <div class="tags"><span>Python</span><span>Streamlit</span><span>Gaming</span></div>
+                    <!-- Pega tu enlace de GitHub aquí abajo -->
+                    <a href="https://github.com/AleChaconG/juego-mario-python.git" class="card-link" target="_blank">Ver Repositorio →</a>
+                </div>
+            </article>
+
+            <!-- Proyecto 3 -->
+            <article class="card reveal">
+                <div class="card-image" style="background: linear-gradient(45deg, #047857, #10b981); display:flex; align-items:center; justify-content:center; color:white; font-size: 2rem;">🤖</div>
+                <div class="card-content">
+                    <h3>Programación Asistida por IA</h3>
+                    <p>Trabajos individuales enfocados en buenas prácticas de desarrollo con IA, incluyendo documentación en archivos .md y uso de MCPs.</p>
+                    <div class="tags"><span>IA</span><span>Buenas Prácticas</span><span>MCPs</span></div>
+                    <!-- Pega tu enlace de GitHub aquí abajo -->
+                    <a href="https://github.com/AleChaconG/Pr-ctica-AGENTS.md.git" class="card-link" target="_blank">Ver Repositorio →</a>
+                </div>
+            </article>
+
+            <!-- Proyecto 4 -->
+            <article class="card reveal">
+                <!-- Si tienes la foto del hackathon, cámbiala aquí en el src -->
+                <img src="assets/hackathon.jpg" alt="Hackathon Tec de Monterrey" class="card-img-real" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; align-items:center; justify-content:center; height:100%; color:white; font-size:2rem;\'>🏆</div>';">
+                <div class="card-content">
+                    <h3>Hackathon Tec de Monterrey</h3>
+                    <p>Participación en Hackathon de 1 día (Primavera-Verano 2024) en el Tec de Monterrey Campus Puebla. Desarrollo de soluciones rápidas bajo presión.</p>
+                    <div class="tags"><span>Hackathon</span><span>Teamwork</span><span>2024</span></div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section class="about reveal">
+        <h2 class="section-title">Sobre mí</h2>
+        <p>Soy estudiante de Ingeniería de Software en la UMAD. Me apasiona resolver problemas complejos mediante datos y crear experiencias digitales funcionales. Aunque tengo una fuerte inclinación hacia las bases de datos y la ciencia de datos, también disfruto explorar el desarrollo web, la IA y los videojuegos. Siempre estoy buscando aprender nuevas herramientas y metodologías, como la programación asistida por IA.</p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2024 David Alejandro Chacón Gómez. Creado con esfuerzo y código.</p>
+        <p>Contacto: <a href="mailto:davidchacongomez197@gmail.com">davidchacongomez197@gmail.com</a></p>
+    </footer>
+
+    <!-- Conectamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

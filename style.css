@@ -1,0 +1,233 @@
+/* --- Variables de Color --- */
+:root {
+    --bg-principal: #0B1120;
+    --bg-tarjetas: #1E293B;
+    --azul-rey: #3B82F6;
+    --azul-oscuro: #2563EB;
+    --texto-blanco: #F8FAFC;
+    --texto-gris: #94A3B8;
+}
+
+/* --- Configuración General --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-blanco);
+    line-height: 1.6;
+    /* Esto es para que todo esté centrado y no se estire de más */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Títulos --- */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* --- Sección Hero (Portada) --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh; /* Ocupa casi toda la pantalla */
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #60A5FA, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content h2 {
+    font-size: 1.2rem;
+    color: var(--texto-gris);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: var(--texto-gris);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: var(--azul-rey);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--azul-oscuro);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--azul-rey);
+    margin-left: 15px;
+}
+
+.btn-outline:hover {
+    background-color: var(--azul-rey);
+}
+
+/* Foto de perfil */
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace la foto circular */
+    border: 4px solid var(--azul-rey);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4); /* Efecto de brillo */
+}
+
+/* --- Sección de Proyectos --- */
+.projects {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--bg-tarjetas);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-color: var(--azul-rey);
+}
+
+.card-image {
+    height: 200px;
+    width: 100%;
+}
+
+.card-img-real {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--texto-blanco);
+}
+
+.card-content p {
+    color: var(--texto-gris);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--azul-rey);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-link {
+    color: var(--azul-rey);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #60A5FA;
+    text-decoration: underline;
+}
+
+/* --- Sección Sobre Mí --- */
+.about {
+    padding: 80px 0;
+    background-color: var(--bg-tarjetas);
+    border-radius: 20px;
+    padding: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.about p {
+    color: var(--texto-gris);
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* --- Pie de Página --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: var(--texto-gris);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--azul-rey);
+    text-decoration: none;
+}
+
+/* --- Animaciones de Scroll --- */
+/* Estado inicial: invisible y desplazado hacia abajo */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+/* Estado final: visible y en su lugar */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
